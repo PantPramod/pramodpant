@@ -1,0 +1,14 @@
+.v-line{
+    background-color:#8892B0;
+    height: 100px;
+    width: 1px;
+}
+.social-icon{
+  transition: 0.3s;
+  color:#8892B0
+}
+
+.social-icon:hover{
+ margin-top: -10px;
+ color:#64ffda
+}

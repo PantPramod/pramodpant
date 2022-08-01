@@ -9,7 +9,7 @@ type propTypes={
 
 const ProjectCard = ({heading, text, technology}:propTypes) => {
   return (
-    <div className='card p-4 mb-4'>
+    <div className='cards p-4 mb-4'>
     
        <h3 className='white'>{heading}</h3>
        <p className='light'>{text}</p>

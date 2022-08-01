@@ -1,0 +1,16 @@
+.emailid{
+    writing-mode: vertical-rl;
+    padding: 10px;
+}
+
+.email-fixed{
+    position: fixed;
+    right: 40px;
+    bottom: 0;
+}
+
+.v-line{
+    background-color:#8892B0;
+    height: 100px;
+    width: 1px;
+}

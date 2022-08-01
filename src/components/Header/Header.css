@@ -28,3 +28,13 @@
 .resume-border:hover{
     background-color:  rgba(17, 37, 68, 0.582);
 }
+
+a{
+    text-decoration: none !important;
+    color:#ccd6f6 !important ;
+    transition: 0.3s;
+}
+
+a:hover{
+    color:#64ffda !important;
+}

@@ -5,7 +5,7 @@ import './Work.css'
 const Work = () => {
     return (
         <>
-        <div className='container py-5 '>
+        <div className='container py-5 mt-5' id="home">
             <h2 className='numbered-heading white num'>
                 <span className='secondary'>03.</span>
                 Some things I've Built
