@@ -1,0 +1,20 @@
+.button-main{
+    border:1px solid #64ffda;
+    cursor: pointer;
+    color:#64ffda;
+    border-radius: 4px;   
+    display: inline-block; 
+}
+.button-main:hover{
+    background-color:  rgba(17, 37, 68, 0.582);
+}
+
+.large{
+    padding: 20px 28px;
+    font-size: 14px;
+}
+
+.small{
+    padding: 12px 16px;
+    font-size: 13px;
+}
