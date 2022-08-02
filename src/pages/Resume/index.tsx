@@ -1,12 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Resume.css';
-type propTypes={
-    Onclose:()=>void
-}
-const Resume = ({ Onclose }:propTypes) => {
+
+const Resume = () => {
+    const navigate=useNavigate();
     return (
         <div className='resume'>
-            <button className="close" onClick={() => Onclose()}>X</button>
+            <button className="close" onClick={() => {navigate('/')}}>X</button>
             <div className='heading'>
                 <h3>Pramod Kumar Pant</h3>
                 <div className='contact'>

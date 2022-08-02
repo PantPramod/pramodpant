@@ -1,13 +1,11 @@
-import React, { Dispatch, SetStateAction } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from '../Button'
 import './Header.css'
 
-type propTypes={
-    showResume:boolean,
-    setShowResume:Dispatch<SetStateAction<boolean>>
-}
 
-const Header = ({showResume, setShowResume}:propTypes) => {
+
+const Header = () => {
+       const navigate = useNavigate();
     return (
         <div className='container-fluid main-color sticky-top'>
             <div className=' p-4 d-flex justify-content-between align-items-center'>
@@ -37,13 +35,11 @@ const Header = ({showResume, setShowResume}:propTypes) => {
                         </a>
                     </li>
                     <Button 
-                    onClick={() => {setShowResume(!showResume) }} 
+                    onClick={() => {navigate('/resume')}} 
                     text="Resume" 
                     size='small' 
                     />
                 </ul>
-
-
             </div>
         </div>
     )

@@ -8,19 +8,21 @@ import Footer from './components/Footer';
 import Work from './components/Work';
 import OtherProjects from './components/OtherProjects';
 import SocialShareMenu from './components/SocialShareMenu';
-import Resume from './components/Resume';
 import Email from './components/Email';
 
 function App() {
-  const [showResume, setShowResume] = useState(false);
+  
   const [showSpinner, setShowSpinner] = useState(true);
+  
   useEffect(() => {
     setTimeout(() => {
       setShowSpinner(false)
     }, 3000)
   }, [])
+
   return (
     <>
+      
       <div className='main-color '>
         {showSpinner ?
         <div className='text-center mh100 d-flex align-items-center justify-content-center'>
@@ -30,11 +32,11 @@ function App() {
         </div>
         :
         <>
-        {showResume ? <Resume Onclose={() => setShowResume(false)} /> :
+       
           <>
             <SocialShareMenu />
             <Email />
-            <Header showResume={showResume} setShowResume={setShowResume} />
+            <Header />
             <HeroSection />
             <AboutMe />
             <Work />
@@ -42,7 +44,7 @@ function App() {
             <GetInTouch />
             <Footer />
           </>
-        }
+        
 </>}
 
 
