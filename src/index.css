@@ -24,3 +24,7 @@ background-color: rgb(10,25,47);
 .font-code{
   font-family: 'Fira Code', monospace;
 }
+
+.mh100{
+  min-height: 100vh;
+}

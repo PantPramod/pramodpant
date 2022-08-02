@@ -2,7 +2,8 @@
     background-color:  #112240;
     transition: 0.3s;
     cursor: pointer;
+    border-radius: 7px;
 }
-.card:hover{
+.cards:hover{
     margin-top: -10px;
 }

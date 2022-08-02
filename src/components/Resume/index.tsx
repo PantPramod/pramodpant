@@ -75,7 +75,7 @@ const Resume = ({ Onclose }:propTypes) => {
                     <br />
                     <a href="https://school-management-system-demo.web.app/">https://school-management-system-demo.web.app/</a>
                     <ul>
-                        <li><b>Technology</b>:    Technology:React JS, Context API, Node JS, Express, Mongodb, mongoose</li>
+                        <li><b>Technology</b>:    Technology: React JS, Context API, Node JS, Express, Mongodb, mongoose</li>
                     </ul>
 
                 </div>

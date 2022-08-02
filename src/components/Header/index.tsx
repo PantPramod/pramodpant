@@ -11,8 +11,8 @@ const Header = ({showResume, setShowResume}:propTypes) => {
     return (
         <div className='container-fluid main-color sticky-top'>
             <div className=' p-4 d-flex justify-content-between align-items-center'>
-                <div className='header-color' >
-                    Logo
+                <div className='header-color font-code rounded border ps-3 pe-3 bg-success text-white' style={{fontSize:"30px"}} >
+                    P
                 </div>
 
                 <ul className='menu d-flex header-font m-0 align-items-center'>
@@ -36,7 +36,11 @@ const Header = ({showResume, setShowResume}:propTypes) => {
                             <span className='me-1 header-sn'>04.</span>Contact
                         </a>
                     </li>
-                    <Button onClick={() => {setShowResume(!showResume) }} text="Resume" size='small' />
+                    <Button 
+                    onClick={() => {setShowResume(!showResume) }} 
+                    text="Resume" 
+                    size='small' 
+                    />
                 </ul>
 
 

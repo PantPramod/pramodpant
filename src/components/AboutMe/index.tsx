@@ -1,6 +1,7 @@
 import React from 'react'
 import './AboutMe.css'
-const index = () => {
+
+const AboutMe = () => {
   return (
     <div className='container py-5 ' id="about">
       <h2 className='white numbered-heading '><span className='secondary me-1'>01.</span> About Me</h2>
@@ -32,4 +33,4 @@ const index = () => {
   )
 }
 
-export default index
+export default AboutMe

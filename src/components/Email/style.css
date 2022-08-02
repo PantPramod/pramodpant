@@ -1,12 +1,19 @@
 .emailid{
     writing-mode: vertical-rl;
-    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    
 }
 
+.emailid:hover{
+    color:#64ffda;
+    padding-bottom: 10px;
+}
 .email-fixed{
     position: fixed;
     right: 40px;
     bottom: 0;
+    padding: 10px;
 }
 
 .v-line{
