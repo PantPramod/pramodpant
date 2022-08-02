@@ -8,7 +8,7 @@ const OtherProjects = () => {
       <p className='text-center secondary mb-4'>View the archive</p>
        <div className='row'>
         {Data.map(d=>
-        <div className='col d-flex'>
+        <div className='col d-flex' key={d.title}>
          <ProjectCard 
          heading={d.title} 
          text={d.text}   

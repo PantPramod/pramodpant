@@ -34,7 +34,7 @@ const ProjectCard = ({ heading, text, technology }: propTypes) => {
       <h3 className='white'>{heading}</h3>
       <p className='light'>{text}</p>
       <div className='d-flex '>
-        {technology.map(tech => <p
+        {technology.map((tech, id) => <p
           key={tech}
           className="light me-2 font-code tech"
         >

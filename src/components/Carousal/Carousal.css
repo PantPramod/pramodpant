@@ -1,0 +1,30 @@
+.frame-image{
+    width:500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-group{
+    display: flex;
+    transition: 1s ease transform;
+}
+
+.image-group img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.upper
+{
+z-index: 9;
+}
+
+.mr{
+
+  margin-right: -40px;
+}
+
+.ml{
+  margin-left: -40px;
+}

@@ -9,6 +9,7 @@ import Work from './components/Work';
 import OtherProjects from './components/OtherProjects';
 import SocialShareMenu from './components/SocialShareMenu';
 import Email from './components/Email';
+import Carousal from './components/Carousal';
 
 function App() {
   
@@ -42,7 +43,9 @@ function App() {
             <Work />
             <OtherProjects />
             <GetInTouch />
+            <Carousal/>
             <Footer />
+
           </>
         
 </>}
