@@ -12,6 +12,7 @@ const SocialShareMenu = () => {
                         size={22}
                         cursor="pointer"
                         className='social-icon'
+                        onClick={()=>window.open('https://github.com/PantPramod')}
                     />
                 </div>
                 <div className='mb-4'>
@@ -19,6 +20,7 @@ const SocialShareMenu = () => {
                         size={22}
                         cursor="pointer"
                         className='social-icon'
+                        // onClick={()=>window.open('https://github.com/PantPramod')}
                     />
                 </div>
                 <div className='mb-4'>
@@ -33,6 +35,7 @@ const SocialShareMenu = () => {
                         size={22}
                         cursor="pointer"
                         className='social-icon'
+                        onClick={()=>window.open('https://www.linkedin.com/in/pramod-pant-b170561a2/')}
                     />
                 </div>
                 <div className='mb-4'>

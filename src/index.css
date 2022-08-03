@@ -28,3 +28,24 @@ background-color: rgb(10,25,47);
 .mh100{
   min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+  background-color: rgb(10,25,47);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(29, 60, 107, 0.788); 
+  border-radius: 10px  0 0 10px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 65, 112, 0.781); 
+}
