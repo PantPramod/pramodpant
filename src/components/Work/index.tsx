@@ -1,4 +1,5 @@
 import React from 'react'
+import { FeaturedProjects } from '../../Data/data'
 import AboutProject from '../AboutProject'
 import Button from '../Button'
 import './Work.css'
@@ -11,94 +12,31 @@ const Work = () => {
                 <span className='secondary'>03.</span>
                 Some things I've Built
             </h2>
-            <div className='row pt-5 pb-5'>
+             
+            {FeaturedProjects.map(fp=><div>
+                <div className='row pt-5 pb-5'>
                 <div className='col' style={{minWidth:"600px", zIndex:"1"}}>
                 <p className='secondary m-2'>Featured Project</p>
-            <h2 className='white'>Halcyon Theme</h2>
+            <h2 className='white'>{fp.title}</h2>
             
-            <AboutProject text='A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.' />
-            <div className='d-flex mt-2'>
+            <AboutProject text={fp.text}/>
+               {fp.technology.map(tech=>
                 <div className='light ms-3 tech'>
-                    VSCode
-                </div>
-                <div className='light ms-3 tech'>
-                    Sublime Text
-                </div>
-                <div className='light ms-3 tech'>
-                    Atom
-                </div>
-                <div className='light ms-3 tech'>
-                    iTerm2
-                </div>
-                <div className='light ms-3 tech'>
-                    Hyper
-                </div>
-            </div>
+                    {tech}
+                </div>)}  
                 </div>
                 <div className='col filter-gray' style={{marginLeft:"-100px"}}>
-                <img  src="https://source.unsplash.com/500x300/?technology,laptop" alt=""/>
+                <img  src={fp.imgUrl} alt=""/>
                 </div>
-            </div>
-
-            <div className='row pt-5 pb-5 '>
-                <div className='col' style={{minWidth:"600px", zIndex:"1"}}>
-                <p className='secondary m-2'>Featured Project</p>
-            <h2 className='white'>Halcyon Theme</h2>
-            
-            <AboutProject text='A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.' />
-            <div className='d-flex mt-2'>
-                <div className='light ms-3 tech'>
-                    VSCode
-                </div>
-                <div className='light ms-3 tech'>
-                    Sublime Text
-                </div>
-                <div className='light ms-3 tech'>
-                    Atom
-                </div>
-                <div className='light ms-3 tech'>
-                    iTerm2
-                </div>
-                <div className='light ms-3 tech'>
-                    Hyper
-                </div>
-            </div>
-                </div>
-                <div className='col filter-gray' style={{marginLeft:"-100px"}}>
-                     <img  src="https://source.unsplash.com/500x300/?technology,laptop1" alt=""/>  
-                </div>
-            </div>
-
-            <div className='row pt-5 pb-5'>
-                <div className='col' style={{minWidth:"600px", zIndex:"1"}}>
-                <p className='secondary m-2'>Featured Project</p>
-            <h2 className='white'>Halcyon Theme</h2>
-            
-            <AboutProject text='A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.' />
-            <div className='d-flex mt-2'>
-                <div className='light ms-3 tech'>
-                    VSCode
-                </div>
-                <div className='light ms-3 tech'>
-                    Sublime Text
-                </div>
-                <div className='light ms-3 tech'>
-                    Atom
-                </div>
-                <div className='light ms-3 tech'>
-                    iTerm2
-                </div>
-                <div className='light ms-3 tech'>
-                    Hyper
-                </div>
-            </div>
-                </div>
-                <div className='col filter-gray' style={{marginLeft:"-100px"}}>
-                <img   src="https://source.unsplash.com/500x300/?technology,laptop2" alt=""/>
-                </div>
-            </div>
+            </div>    
+            </div>)}
+           
             <div className='text-end '>
-            <Button onClick={()=>{}} size="small" text='Learn More' />
+            <Button 
+            onClick={()=>{}} 
+            size="small" 
+            text='Learn More' 
+            />
             </div> 
         </div>
 

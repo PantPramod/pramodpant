@@ -3,8 +3,8 @@ import './Button.css'
 
 type propType={
 onClick:()=>void,
-size:"large" | "small"
-text:string
+size?:"large" | "small"
+text?:string
 }
 
 const Button = ({onClick, size, text}:propType) => {

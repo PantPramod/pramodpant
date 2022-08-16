@@ -20,7 +20,6 @@ const SocialShareMenu = () => {
                         size={22}
                         cursor="pointer"
                         className='social-icon'
-                        // onClick={()=>window.open('https://github.com/PantPramod')}
                     />
                 </div>
                 <div className='mb-4'>
